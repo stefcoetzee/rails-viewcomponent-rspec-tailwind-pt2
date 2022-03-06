@@ -106,12 +106,6 @@
           null
         ]
       },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/home/scz/repos/play/rails/view-component-rspec/app/models/team.rb": {
         "lines": [
           1,
@@ -137,64 +131,6 @@
           1,
           1,
           1,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/teams_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          5,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          14,
-          null,
           null
         ]
       },
@@ -262,6 +198,70 @@
           null
         ]
       },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/teams_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          14,
+          null,
+          null
+        ]
+      },
       "/home/scz/repos/play/rails/view-component-rspec/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -306,6 +306,6 @@
         }
       }
     },
-    "timestamp": 1645245930
+    "timestamp": 1646500420
   }
 }
