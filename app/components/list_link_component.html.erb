@@ -1,0 +1,8 @@
+<li class="mb-1">
+  <%= link_to @list_link[:href] do %>
+    <div class="flex space-x-1 sm:items-center">
+      <%= render RightChevronComponent.new %>
+      <span><%= @list_link[:text] %></span>
+    </div>
+  <% end %>
+</li>

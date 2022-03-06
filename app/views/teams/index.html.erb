@@ -14,16 +14,11 @@
 
 <% if @teams.any? %>
   <ul>
-    <% @teams.order(name: :asc).each do |team| %>
-      <li class="mb-1">
-        <%= link_to team do %>
-          <div class="flex space-x-1 sm:items-center">
-            <%= render RightChevronComponent.new %>
-            <span><%= team.name %></span>
-          </div>
-        <% end %>
-      </li>
-    <% end %>
+    <%= render ListLinkComponent.with_collection(
+      @teams.order(name: :asc).map do |team|
+        { href: team_path(team), text: team.name }
+      end
+    ) %>
   </ul>
 <% else %>
   <div>
