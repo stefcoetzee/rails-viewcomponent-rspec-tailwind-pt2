@@ -23,23 +23,21 @@
 </div>
 
 <% if @team.athletes.any? %>
-  <table class="w-full table-auto">
-    <thead>
-      <tr>
-        <th class="pb-1.5 text-left border-b">
-          Last name
-        </th>
-        <th class="pb-1.5 text-left border-b">
-          First name
-        </th>
-        <th class="pb-1.5 text-left border-b hidden sm:table-cell">
-          Position
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @team.athletes.order(last_name: :asc).each_with_index do |athlete, index| %>
-      <tr>
+  <%= render TeamRosterComponent.new do |c| %>
+    <% c.header do %>
+      <th class="pb-1.5 text-left border-b">
+        Last name
+      </th>
+      <th class="pb-1.5 text-left border-b">
+        First name
+      </th>
+      <th class="pb-1.5 text-left border-b hidden sm:table-cell">
+        Position
+      </th>
+    <% end %>
+
+    <%= @team.athletes.order(last_name: :asc).each_with_index do |athlete, index| %>
+      <% c.row do %>
         <td class="<%= "pt-1.5" if index == 0 %>">
           <%= link_to athlete.last_name, athlete %>
         </td>
@@ -49,10 +47,9 @@
         <td class="<%= "pt-1.5" if index == 0 %> hidden sm:table-cell">
           <%= link_to athlete.position, athlete %>
         </td>
-      </tr>
       <% end %>
-    </tbody>
-  </table>
+    <% end %>
+  <% end %>
 <% else %>
   <div>
     Players are listed here.
